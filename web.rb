@@ -4,25 +4,6 @@ require "json"
 require "open-uri"
 require 'open3'
 
-# get '/' do
-#   "Hello, world"
-# end
-
-# def reply(data={})
-#   msg = ""
-#   if data["status"] == "ok" and data["events"]
-#     data["events"].each do |e, text=e["message"]["text"]|
-#       text.match(/(ぬるぽ|ヌルポ|null)/i) do
-#         msg = "ガ"
-#         break
-#       end
-#     end
-#   end
-#   msg
-# rescue
-#   ""
-# end
-
 def sandbox(&code)
   proc {
     $SAFE = 2
@@ -32,7 +13,7 @@ def sandbox(&code)
 end
 
 get '/' do
-  "Here is raa0121's sinatra app"
+  "Here is pogin's sinatra app"
 end
 
 post '/' do
@@ -52,14 +33,3 @@ post '/' do
     end
   end
 end
-
-
-# post "/do" do
-#     request.body.rewind  # in case someone already read it
-#     data = (JSON.parse request.body.read rescue {})
-
-#     reply(data)
-# end
-# def lingr_
-
-# end
