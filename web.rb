@@ -23,7 +23,7 @@ rescue
   ""
 end
 
-post "/" do
+post "/do" do
     request.body.rewind  # in case someone already read it
     data = (JSON.parse request.body.read rescue {})
 
