@@ -4,9 +4,9 @@ require "json"
 require "open-uri"
 require 'open3'
 
-get '/' do
-  "Hello, world"
-end
+# get '/' do
+#   "Hello, world"
+# end
 
 # def reply(data={})
 #   msg = ""
