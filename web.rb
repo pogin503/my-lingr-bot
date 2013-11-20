@@ -23,7 +23,7 @@ post "/" do
   # request.body.rewind  # in case someone already read it
   json = JSON.parse(request.body.string)
   # data = (JSON.parse request.body.read rescue {})
-  json
+  json.to_s
   # reply(data)
 end
 
