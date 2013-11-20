@@ -14,7 +14,7 @@ def reply(data={})
             end
         end
     end
-    msg.to_s
+    msg
 rescue
     ""
 end
