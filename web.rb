@@ -14,7 +14,7 @@ def reply(data={})
             end
         end
     end
-    msg
+    msg.to_s
 rescue
     ""
 end
@@ -23,8 +23,8 @@ post "/" do
   # request.body.rewind  # in case someone already read it
   json = JSON.parse(request.body.string)
   # data = (JSON.parse request.body.read rescue {})
-  json.to_s
-  # reply(data)
+  # json.to_s
+  reply(json)
 end
 
 get '/' do
