@@ -12,6 +12,9 @@ def reply(data = {})
         msg = 'ガ'
         break
       end
+      text.match(/^Yo/i) do
+        msg = 'Yo'
+      end
     end
   end
   return msg
