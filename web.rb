@@ -15,11 +15,14 @@ def reply(data = {})
       text.match(/^Yo/i) do
         msg = 'Yo'
       end
+      text.match(/^show json/) do
+        msg = data['events']
+      end
     end
   end
   return msg
 rescue
-    ''
+  ''
 end
 
 post '/' do
